@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+p{
+    width: 250px;
+}
+h1{
+    width: 250px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  .card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card img {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+  }
+  
+  .card-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-details h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+       font-family: 'Fraunces', serif;
+  }
+  
+  .card-details h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+  }
+  
+  .card-details p {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    color: hsl(228, 12%, 48%);
+  }
+  
+  .prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .price-large {
+    font-size: 24px;
+    margin-right: 10px;
+    color: hsl(158, 36%, 37%);;
+  }
+  
+  .price-small {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+  }
+  
+  .add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart i {
+    margin-right: 10px;
+  }
+  .attribution{
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .card img {
+      margin-left: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .card-details {
+      margin-left: 20px;
+    }
+  
+    .add-to-cart {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .card-details h1 {
+      font-size: 24px;
+    }
+  
+    .card-details p {
+      font-size: 14px;
+    }
+  
+    .prices {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .price-large {
+      font-size: 20px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .price-small {
+      font-size: 14px;
+      margin-left: 0;
+    }
+  }
